@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* 자손 선택자 div{border: 3px solid #cd853f;}
+       div p{background-color: #ffefd5 ;} */
+       
+       div{border: 3px solid #cd853f;}
+       div > p {background-color:#ffefd5;}
+    </style>
+</head>
+<body>
+    <!-- 자손 선택자 
+    <h1>자손 선택자를 이용 선택</h1>
+    <p>div 태그 외부의 p 태그는 선택되지 않음</p>
+    <div>
+        <p>div 태그 내부의 p 태그만 선택</p>
+        <p>div 태그 내부의 p 태그만 선택</p>
+        <p>div 태그 내부의 p 태그만 선택</p>
+    </div>
+    <p>div 태그 외부의 p 태그는 선택되지 않음</p> 
+    -->
+
+    자식 선택자
+    <h1>자식 선택자를 이용 선택</h1>
+    <p>div 태그 외부의 p 태그는 선택되지 않음</p>
+    <div>
+        <p>div 태그 바로 밑에 존재하는 p 태그만 선택</p>
+        <p>div 태그 바로 밑에 존재하는 p 태그만 선택</p>
+        <span>
+            <p>이 p 태그는 span 태그로 둘려 쌓여 있다 <br>
+               따라서 div 태그 바로 밑에 존재하는 p 태그가 아니라 선택 안됨
+            </p>
+        </span>
+    </div>
+    <p>div 태그 외부의 p 태그는 선택되지 않음</p>
+</body>
+</html>
