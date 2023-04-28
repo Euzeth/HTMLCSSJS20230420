@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-weight: 400;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        header {
+            height: 90px;
+            border-bottom: 1px solid lightgray;
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            padding: 0 120px;
+        }
+
+        header>.logo {
+            width: 90px;
+            display: flex;
+            align-items: center;
+        }
+
+        header>.logo>img {}
+
+        header>.gnb {
+            width: 1200px;
+        }
+
+        header>.gnb>.main {
+            width: 100%;
+            display: flex;
+            justify-content: bottom;
+            margin: 0px;
+        }
+
+        header>.gnb>.main>li {
+            width: 150px;
+            height: 90px;
+            text-align: center;
+            position: relative;
+        }
+
+        header>.gnb>.main>li>a {
+            display: block;
+            line-height: 90px;
+            font-size: 1.2rem;
+            /* border : 1px solid ; */
+        }
+
+        header>.gnb>.main>li>.sub {
+            position: absolute;
+
+            /* top: 90px;
+            left: 0px;
+            width: 30vw;
+             */
+            /* display: none; */
+            background-color: skyblue;
+            border-radius: 5px;
+            /* border : 1px solid black; */
+            display:none;
+            height: 35px;
+           
+            
+        }
+
+        header>.gnb>.main>li>.sub>li {
+            display: inline-block;
+            position: relative;        
+            /* border : 1px solid black; */
+            width:150px;
+        }
+
+        header>.gnb>.main>li>.sub>li>a {
+            font-weight: 400;
+            color: white;
+            line-height:35px;
+        }
+
+        header>.gnb>.main>li>a:hover {
+            color: rgb(58, 93, 195);
+        }
+
+        header>.gnb>.main>li:hover .sub {
+            display: flex;
+            justify-content: left;
+        
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/image/로고.png" alt="">
+        </div>
+        <nav class="gnb">
+            <ul class="main">
+                <li>
+                    <a href="">수박차트</a>
+                    <ul class="sub">
+                        <li><a href="">국내TOP100</a></li>
+                        <li><a href="">국외TOP100</a></li>
+                        <li><a href="">최신음악</a></li>
+                        <li><a href="">장르음악</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">수박DJ</a>
+                    <ul class="sub">
+                        <li><a href="">투데이</a></li>
+                        <li><a href="">테마장르</a></li>
+                        <li><a href="">인기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">수박TV</a>
+                    <ul class="sub">
+                        <li><a href="">뮤직비디오</a></li>
+                        <li><a href="">방송</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">수박매거진</a>
+                    <ul class="sub">
+                        <li><a href="">오늘의매거진</a></li>
+                        <li><a href="">완결매거진</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">공지사항</a>
+                    <ul class="sub">
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">QnA</a></li>
+                        <li><a href="">자주하는질문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">마이페이지</a>
+                    <ul class="sub">
+                        <li><a href="">정보수정</a></li>
+                        <li><a href="">마이페이지</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
